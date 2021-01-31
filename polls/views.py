@@ -2,6 +2,7 @@ from django.shortcuts import get_object_or_404, render, HttpResponseRedirect
 from django.http import HttpResponse,Http404
 from django.template import loader
 from django.urls import reverse
+from django.views import generic
 from .models import *
 
 class IndexView(generic.ListView):
